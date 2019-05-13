@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83DDDB"
+    tools:context=".Activities.SettingsActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="142dp"
+        android:text="Set alarm frequency in minutes:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textview2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextUser4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUser5"
+        android:layout_width="195dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Street, nr. City, Country"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGetLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUser4" />
+
+    <EditText
+        android:id="@+id/editTextUser4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUser5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="193dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="345dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Add default address:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextUser5"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="26dp"
+        android:background="#83DDDB"
+        android:cursorVisible="true"
+        android:text="User Setings"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUser4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGetLocation"
+        android:layout_width="208dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:text="Get current location as default adress"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSetData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUser5" />
+
+    <Button
+        android:id="@+id/buttonSetData"
+        android:layout_width="208dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="120dp"
+        android:text="Set Data"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetLocation" />
+</android.support.constraint.ConstraintLayout>

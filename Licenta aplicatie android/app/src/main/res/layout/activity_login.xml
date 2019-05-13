@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83DDDB"
+    tools:context=".Activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/textviewPass"
+        android:layout_width="116dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Password:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewUser" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="288dp"
+        android:layout_height="386dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textviewUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/poza_poluarefin" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="admin"
+        app:layout_constraintBottom_toBottomOf="@+id/textviewPass"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogin" />
+
+    <TextView
+        android:id="@+id/textviewUser"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="10dp"
+        android:text="Username:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textviewPass"
+        app:layout_constraintEnd_toEndOf="@+id/textviewPass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textviewPass"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editTextUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Admin1"
+        app:layout_constraintStart_toStartOf="@+id/editTextPass"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textViewReg"
+        android:layout_width="222dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="2dp"
+        android:text="Don't have an account? "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <Button
+        android:id="@+id/buttonFinRegister"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="2dp"
+        android:text="Register here"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReg" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="14dp"
+        android:text="Login"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewPass" />
+</android.support.constraint.ConstraintLayout>
